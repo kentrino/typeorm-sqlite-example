@@ -1,0 +1,10 @@
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "max-line-length": false,
+    "semicolon": [true, "never"],
+    "quotemark": [true, "double", "avoid-escape"],
+    "no-increment-decrement": false,
+    "no-unused-variable": true
+  }
+}

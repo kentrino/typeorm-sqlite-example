@@ -1,0 +1,23 @@
+{
+  "name": "line-salvage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "tslint:fix": "yarn run tslint --fix",
+    "tslint": "./node_modules/.bin/tslint -p tsconfig.json -c tslint.json --exclude '**/*.d.ts' --exclude 'node_modules/**/*.ts' 'src/**/*.ts'"
+  },
+  "author": "kentrino",
+  "license": "MIT",
+  "dependencies": {
+    "typeorm": "^0.2.6"
+  },
+  "devDependencies": {
+    "sqlite3": "^4.0.0",
+    "ts-node": "^6.0.3",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.8.3"
+  }
+}
